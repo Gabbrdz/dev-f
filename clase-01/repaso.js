@@ -21,6 +21,13 @@ console.log("Operador: '<='", 9>=9); // Menor o igual que
 
 // Esctructuras de Control
 
+//For
+
+for(let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+}
 
 // Else
 var edad = 18;

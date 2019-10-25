@@ -78,3 +78,42 @@ switch(signo){
   console.log("Ingresa un signo valido")
 
 }
+
+
+//Array
+
+const lista = [];
+let lista2 = [1, 3, 'uno', '2', true, false, 'tres'];
+console.log(lista);
+console.log(lista2);
+console.log(lista2[6]);
+
+lista.push('hola');
+lista.push(9);
+lista.push(true);
+
+console.log(lista);
+
+
+for (let i=0; i<lista.length; i++){
+  console.log(list2[i])
+};
+
+
+var nombre = 'Gabriela';
+var apellido = 'Rodiguez';
+
+function printName(name){
+
+  console.log(`tu te llamas: '${name}`)
+}
+
+printName(nombre + apellido);
+
+
+const print = (apellido) => {
+
+  console.log(`tu apellido es: '${apellido}`);
+}
+
+print('Rodriguez')

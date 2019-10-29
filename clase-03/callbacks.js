@@ -71,3 +71,51 @@ function multiplicar(num1, num2) {
 console.log(hacerOperacion(5, 5, sumar));
 console.log(hacerOperacion(5, 3, restar));
 console.log(hacerOperacion(5, 7, multiplicar));
+
+
+// ECMA 6
+let hacerOperacion = (num1, num2, operacion) => {
+    return console.log(operacion(num1, num2));
+};
+
+let sumar = (num1, num2) => {
+    return num1 + num2
+};
+
+let restar = (num1, num2) => {
+    return num1 - num2
+};
+
+let multiplicar = (num1, num2) => {
+    return num1 * num2
+};
+
+hacerOperacion(5, 5, multiplicar);
+hacerOperacion(5, 3, restar);
+hacerOperacion(5, 7, sumar);
+
+
+// Hacer un arreglo de 4 cantidaddes de tiempo en minutos EJEMPLO(120, 80,200,100)y tomar solo las cantidades mayores a dos horas (hacer la comparacion en horas) mediante un callback. 
+
+
+
+const mayorQueDosHoras = (arreglo, callback) => {
+    return callback(arreglo);
+  };
+  
+  function compararHoras(arreglo) {
+  
+    let nuevoArreglo =  []
+  
+    for (let i=0; i<arreglo.length; i++){
+      if(arreglo[i] > 121) {
+        nuevoArreglo.push(arreglo[i]);
+      }
+    }
+  
+    return nuevoArreglo;
+  }
+  
+  const arregloFinal = mayorQueDosHoras([300, 122, 50, 40], compararHoras);
+  
+  console.log(arregloFinal);

@@ -97,8 +97,6 @@ hacerOperacion(5, 7, sumar);
 
 // Hacer un arreglo de 4 cantidaddes de tiempo en minutos EJEMPLO(120, 80,200,100)y tomar solo las cantidades mayores a dos horas (hacer la comparacion en horas) mediante un callback. 
 
-
-
 const mayorQueDosHoras = (arreglo, callback) => {
     return callback(arreglo);
   };

@@ -12,7 +12,7 @@ server.on('request', (request, response) => {
             .on('end', () => {
                 response.writeHead(200, {'Content-Type': 'text/plain'})
                 body = Buffer.concat(body).toString();
-                response.end('hello world\n');
+                response.end('hello world');
             });
     } else {
         response.statusCode = 404;

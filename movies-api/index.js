@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const { config }  = require('./configuration/index');
-const moviesApi = require('./routes/movies-routes');
+const moviesApi = require('./routes/movies');
 
 moviesApi(app)
 
